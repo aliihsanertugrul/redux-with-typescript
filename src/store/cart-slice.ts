@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-type CartItem={
+export type CartItem={
     id:string;
     title:string;
     price:number;
@@ -40,6 +40,6 @@ export const cartSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { } = cartSlice.actions
+export const { addToCart,removeFromCart} = cartSlice.actions
 
-export default cartSlice.reducer
+// export default cartSlice.reducer
